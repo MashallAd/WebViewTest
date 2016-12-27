@@ -1,0 +1,136 @@
+<!DOCTYPE html><html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>出错了啊！再试试吧~</title>
+    <style type="text/css">
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	margin: 0;
+	font-family: 微软雅黑, sans-serif;
+	 -webkit-text-size-adjust:none;
+	background: #fbfbfb;
+	 -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.con{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+p{
+	margin: 0;
+}
+.main{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px 0;
+	}.main_inner{
+		width: 300px;
+		margin: 0 auto;
+		text-align: center;
+		}
+		.imgcon{
+			text-align: center;
+			margin-bottom: 40px;
+			height: 225px;
+			background: center no-repeat;
+			background-size: auto 100%;
+		}
+
+	.i_1{
+		margin: 0;
+		font-size: 17px;
+		color: #2e2e2e;
+		}.i_1 a{
+			color: #3e99f3;
+		}
+	.i_2{
+		color: #b0b0b0;
+		font-size: 12px;
+		margin: 12px 0 20px 0;
+	}
+	.i3{
+		font-size: 16px;
+		line-height: 40px;
+		color: #fff;
+		background-size: auto 100%;
+		border-radius: 4px;
+		background-color: #000
+	}.i3:active{
+		background-color: #3189e3;
+	}
+/*----------------------------night mode*/
+body.night{
+	background-color: #25272e;
+}
+.night .imgcon{
+	opacity: 0.4;
+}.night .i_1{
+	margin: 0;
+	color: #7e859d;
+	}.night .i_1 a{
+		color: #7189db;
+	}
+.night .i_2{
+	color: #7e859d;
+}
+</style>
+</head>
+<body class="">
+
+<script type="text/javascript">
+
+function changeText() {
+    window.demo.changeText();
+}
+
+function changeTextCallBack(newText) {
+    document.getElementById("text").innerHTML = newText;
+}
+
+function wave() {
+		    alert("1");
+
+		}
+
+</script>
+
+<div class="con">
+    <div class="main">
+        <div class="main_inner">
+            <div class="info_con" align="center">
+                <p><span id="text">before</span></p>
+                <p class="i3" id="change_text" onclick="window.changeText();">改变内容</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+<!--<html>-->
+<!--<script language="javascript">-->
+	    <!--/* This function is invoked by the activity */-->
+		<!--function wave() {-->
+		    <!--alert("1");-->
+			<!--document.getElementById("droid").src="android_waving.png";-->
+			<!--alert("2");-->
+		<!--}-->
+	<!--</script>-->
+<!--<body>-->
+<!--&lt;!&ndash; Calls into the javascript interface for the activity &ndash;&gt;-->
+<!--<a onClick="window.demo.clickOnAndroid()"><div style="width:80px;-->
+			<!--margin:0px auto;-->
+			<!--padding:10px;-->
+			<!--text-align:center;-->
+			<!--border:2px solid #202020;" >-->
+    <!--<img id="droid" src="android_normal.png"/><br>-->
+    <!--Click me!-->
+<!--</div></a>-->
+<!--</body>-->
+<!--</html>-->
