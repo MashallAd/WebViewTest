@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="handlers"
+            type="www.baidu.com.zhangxu19.myapplication.IClientOpenPopupBtnClick"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#bbbbbbbb"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_allow_this_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{handlers::openOuterClientThisTime}"
+            android:text="仅本次允许"/>
+
+        <Button
+            android:id="@+id/btn_allow_allways"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{handlers::openOuterClientAllways}"
+            android:text="始终允许"/>
+
+        <Button
+            android:id="@+id/btn_allow_no_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{handlers::openOuterClientNoMoreHint}"
+            android:text="不再提示"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{handlers::openOuterClientCancel}"
+            android:text="取消"/>
+
+    </LinearLayout>
+</layout>
